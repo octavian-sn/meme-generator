@@ -4,8 +4,33 @@
 
 body {
   margin: 0;
-  background-color: #e9d4e5;
+  background-color: #dfd4e9;
+  color: white;
 }
 
 #root {
+  height: 550px;
+  width: 550px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Header */
+header {
+  height: 65px;
+  background: linear-gradient(0.25turn, #672280, #a626d3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 36px;
+}
+header h3 {
+  font-family: Karla, Arial, Helvetica, sans-serif;
+  margin-right: auto;
+  font-size: 20.75;
+  letter-spacing: -0.1em;
+}
+header span {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
