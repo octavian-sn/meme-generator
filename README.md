@@ -4,4 +4,4 @@ Built with [React](https://reactjs.org/) following a [Figma design](<https://www
 
 ### [Live preview](https://octavian-sn.github.io/meme-generator/)
 
-![Screen-shot of the app!](./src/assets/screen.png)
+![Screen-shot of the app!](./src/assets/screen.gif)
