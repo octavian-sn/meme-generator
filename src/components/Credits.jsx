@@ -5,7 +5,7 @@ export default function Credits() {
   return (
     <div className="credits">
       <div className="credits--image">
-        <a href="https://github.com/octavian-sn">
+        <a href="https://github.com/octavian-sn/meme-generator">
           <img src={github} alt="github logo" />
         </a>
       </div>
