@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import memesData from './memesData';
 
 // class Main extends Component {
 //   constructor() {
@@ -50,8 +49,20 @@ function Main() {
     imageURL: 'https://i.imgflip.com/261o3j.jpg',
   });
 
+  const [allMemes, setAllMemes] = React.useState();
+
+  React.useEffect(() => {
+    fetch('https://api.imgflip.com/get_memes')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setAllMemes(data.data.memes);
+      });
+  }, []);
+
   function changeMeme() {
-    const arr = memesData.data.memes;
+    const arr = allMemes;
     const number = Math.floor(Math.random() * arr.length);
     const url = arr[number].url;
     setMeme((prevMeme) => ({
